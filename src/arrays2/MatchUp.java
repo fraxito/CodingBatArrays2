@@ -7,7 +7,7 @@ package arrays2;
 
 /**
  *
- * @author robi
+ * @author Roberto Herranz
  */
 public class MatchUp {
 
