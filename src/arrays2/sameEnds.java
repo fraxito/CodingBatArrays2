@@ -6,7 +6,7 @@ package arrays2;
 
 /**
  *
- * @author xp
+ * @author jorgept18
  */
 public class sameEnds {
     
