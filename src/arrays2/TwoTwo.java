@@ -10,5 +10,13 @@ package arrays2;
  * @author Gesus
  */
 public class TwoTwo {
-    
+
+public boolean twoTwo(int[] nums) {
+  if(nums.length==0)
+  {
+    return true;
+  }
+
+}
+
 }
