@@ -6,8 +6,19 @@ package arrays2;
 
 /**
  *
- * @author xp
+ * @author Javier Fernandez-Trapa
  */
+
 public class FizzArray2 {
-    
+   
+    public String[] fizzArray2(int n) {
+       String[] array= new String[n];
+       for(int i=0;i<n;i++){
+            array[i]=String.valueOf(i);
+       }
+        
+       return array;
+    }
 }
+ 
+
