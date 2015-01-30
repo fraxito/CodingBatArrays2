@@ -10,4 +10,13 @@ package arrays2;
  */
 public class sameEnds {
     
+    public boolean sameEnds(int[] nums, int len) {
+        if (nums [0] == nums[nums.length-1]){
+            return true;
+        }
+        else if (nums [nums.length-2] == nums[1]){
+            return true;
+        }
+        return false;
+    }
 }
