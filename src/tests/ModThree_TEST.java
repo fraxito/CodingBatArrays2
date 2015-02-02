@@ -15,7 +15,7 @@ public class ModThree_TEST extends javax.swing.JFrame {
     private Object JLabel2;
 
     /**
-     * Creates new form ModThree_TEST
+     * ModThree_TEST
      */
     public ModThree_TEST() {
         initComponents();
