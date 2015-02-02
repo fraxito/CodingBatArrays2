@@ -11,12 +11,8 @@ public class ShiftLeft {
     for(int i=0;i< nums.length-1;i++){
          int numero = 1;
          retorno1[i] = nums[nums.length-numero];
-         numero++;     
-         
+         numero++; 
     }
-        return retorno1;
-    
-    
-        
+        return retorno1;   
     }
 }
