@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package arrays2;
 
 /**
@@ -10,5 +6,13 @@ package arrays2;
  * @author sote
  */
 public class ShiftLeft {
-    
+    public int[] shiftLeft(int[] nums) {
+         int retorno1[]= new int [nums.length];
+    for(int i=0;i< nums.length-1;i++){
+         int numero = 1;
+         retorno1[i] = nums[nums.length-numero];
+         numero++; 
+    }
+        return retorno1;   
+    }
 }
