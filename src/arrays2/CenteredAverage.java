@@ -8,31 +8,33 @@ package arrays2;
 
 /**
  *
- * @author xp
+ * @author Yoel Cano Martinez.
  */
 public class CenteredAverage {
-    public int centeredAverage(int[] nums) {
-int sum = 0;
-int numeroMayor = 0;
-int numeroMenor = 0;
+public int centeredAverage(int[] nums) {
 
+int sum = 0;
+int numeroMayor = nums[0];
+int numeroMenor = nums[0];
 
 for (int i = 0; i < nums.length; i++){
-   if (nums[i]>=numeroMayor){
-    numeroMayor = nums[i];
-   }
-   if (nums[i]<=numeroMenor){
+   if (nums[i]>numeroMenor){
     numeroMenor = nums[i];
    }
-   
-}
+   if (nums[i]<numeroMayor){
+    numeroMayor = nums[i];
+   }  
+
  
-for (int j = 0; j < nums.length; j++){
-   sum = sum + nums[j];
+sum += nums[i] ;
 }
- sum = sum - numeroMayor - numeroMenor; 
-       
- return sum/(nums.length-2); 
+
+ sum = sum - numeroMayor;
+ sum = sum - numeroMenor; 
+ 
+ int media = 0;
+ media = sum/(nums.length - 2);
+ return media; 
 }
     
 }
