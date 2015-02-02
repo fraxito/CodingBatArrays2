@@ -11,6 +11,7 @@ public class FizzArray3 {
     for (int i = 0; i < n; i++)
         result[i] = start++;
     return result;
+    
 }
     
 }
