@@ -22,11 +22,28 @@ public class More14_TEST extends javax.swing.JFrame {
         
         boolean p1 = prueba.More14(nums1);
         if (prueba.More14(nums1)== true){
-        jLabel1.setText("BIEN");} else {
+        jLabel1.setText("VERDADERO!!");} else {
         
-            jLabel1.setText("ERROR");
+            jLabel1.setText("FALSO");
         }
         
+        
+        int [] nums2 = {1, 4, 1, 4};
+        
+        boolean p2 = prueba.More14(nums2);
+        if (prueba.More14(nums1)== false){
+        jLabel2.setText("VERDADERO!!");} else {
+        
+            jLabel2.setText("FALSO");
+        }
+        int [] nums3 = {1, 1};
+        
+        boolean p3 = prueba.More14(nums3);
+        if (prueba.More14(nums1)== true){
+        jLabel3.setText("VERDADERO!!");} else {
+        
+            jLabel3.setText("FALSO");
+        }
         
     }
 
@@ -40,10 +57,16 @@ public class More14_TEST extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("jLabel1");
+
+        jLabel2.setText("jLabel2");
+
+        jLabel3.setText("jLabel3");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -51,7 +74,10 @@ public class More14_TEST extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(138, 138, 138)
-                .addComponent(jLabel1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1))
                 .addContainerGap(217, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -59,7 +85,11 @@ public class More14_TEST extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel1)
-                .addContainerGap(263, Short.MAX_VALUE))
+                .addGap(55, 55, 55)
+                .addComponent(jLabel2)
+                .addGap(69, 69, 69)
+                .addComponent(jLabel3)
+                .addContainerGap(107, Short.MAX_VALUE))
         );
 
         pack();
@@ -103,5 +133,7 @@ public class More14_TEST extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
