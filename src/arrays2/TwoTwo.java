@@ -12,14 +12,21 @@ package arrays2;
 public class TwoTwo {
 
 public boolean twoTwo(int[] nums) {
- for (int y = 0; y < nums.length; y++){
-if ((nums[y] == 2) && (y + 1 == 2)){
- 
- return true;
-
+ //Mientras que i sea menor que la longitud del array....
+for (int i=0; i<(nums.length); i++)
+{
+  //si i es igual a 2....
+if(nums[i]==2)
+{
+ //comprueba la siguiente posicion....
+i++;
+//y si la longitud de i no es menor que la del array o bien no sea 2,devuelve falso.
+if(!(i<(nums.length)) || nums[i] !=2)
+    return false;
+//Mientras que i sea  igual a 2,devuelve verdadero.
+while(i<nums.length && nums[i] ==2) i++;
 }
- }
-return false;
-
+}
+return true;
 }
 }
