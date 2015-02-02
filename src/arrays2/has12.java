@@ -22,5 +22,5 @@ public class has12 {
   }
   return buscaDos;
 }
-
+  
 }
