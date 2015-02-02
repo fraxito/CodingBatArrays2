@@ -7,11 +7,19 @@ package arrays2;
 
 /**
  *
- * @author xp
+ * @author Gesus
  */
-public class CountEvens {
-    
-    public int countEvens(int[] nums) {
-        return 1;
-    }
+public class TwoTwo {
+
+public boolean twoTwo(int[] nums) {
+ for (int y = 0; y < nums.length; y++){
+if ((nums[y] == 2) && (y + 1 == 2)){
+ 
+ return true;
+
+}
+ }
+return false;
+
+}
 }

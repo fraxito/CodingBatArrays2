@@ -7,11 +7,8 @@ package arrays2;
 
 /**
  *
- * @author xp
+ * @author javier
  */
-public class CountEvens {
+public class IsEverywhere {
     
-    public int countEvens(int[] nums) {
-        return 1;
-    }
 }

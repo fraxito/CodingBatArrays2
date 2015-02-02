@@ -7,11 +7,8 @@ package arrays2;
 
 /**
  *
- * @author xp
+ * @author TianWei
  */
-public class CountEvens {
+public class Post4 {
     
-    public int countEvens(int[] nums) {
-        return 1;
-    }
 }
