@@ -9,7 +9,7 @@ import arrays2.BigDiff;
 
 /**
  *
- * @author xp
+ * @author Yoel Cano Martinez.
  */
 public class BigDiff_TEST extends javax.swing.JFrame {
 

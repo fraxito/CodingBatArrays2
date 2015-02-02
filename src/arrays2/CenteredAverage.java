@@ -8,7 +8,7 @@ package arrays2;
 
 /**
  *
- * @author xp
+ * @author Yoel Cano Martinez.
  */
 public class CenteredAverage {
 public int centeredAverage(int[] nums) {
