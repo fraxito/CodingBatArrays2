@@ -11,12 +11,22 @@ package arrays2;
 public class sameEnds {
     
     public boolean sameEnds(int[] nums, int len) {
-        if (nums [0] == nums[nums.length-1]){
+         int auxiliar = 0;
+         int contador = len;
+         if (len == 0){
+            return true;
+         }
+        for (int i=0; i<len; i++){
+            if (nums [i] == nums[nums.length-contador]){
+                auxiliar++;
+                contador = contador-1;
+            }
+        }
+        if (auxiliar == len){
             return true;
         }
-        else if (nums [nums.length-2] == nums[1]){
-            return true;
+        else{   
+            return false;
         }
-        return false;
-    }
+    }    
 }
