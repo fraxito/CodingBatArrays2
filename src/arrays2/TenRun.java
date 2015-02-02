@@ -11,4 +11,21 @@ package arrays2;
  */
 public class TenRun {
     
+    public int[] tenRun(int[] nums) {
+  
+  int aux = -1;
+  
+  for (int i=0; i<nums.length; i++){
+   
+     if (nums[i]% 10 == 0){
+     aux = nums[i];
+     
+     }
+     else if (aux != -1){
+     nums[i]=aux;
+     }
+   }   
+   return nums;
+    
+    }
 }
