@@ -5,44 +5,54 @@
  */
 package tests;
 
-import arrays2.More14;
+import arrays2.ModThree;
+import javax.swing.JLabel;
 /**
  *
- * @author luisfeliz
+ * @author xp
  */
-public class More14_TEST extends javax.swing.JFrame {
+public class ModThree_TEST extends javax.swing.JFrame {
+    private Object JLabel2;
 
     /**
-     * Creates new form More14
+     * ModThree_TEST
      */
-    public More14_TEST() {
+    public ModThree_TEST() {
         initComponents();
-        More14 prueba = new More14();
-        int [] nums1 = {1, 4, 1};
+        ModThree prueba = new ModThree();
+    
+        int [] nums1 = {2, 1, 3, 5};
+        int [] nums2 = {2, 1, 2, 5};
+        int [] nums3 = {2, 4, 2, 5};
         
-        boolean p1 = prueba.More14(nums1);
-        if (prueba.More14(nums1)== true){
-        jLabel1.setText("VERDADERO!!");} else {
+        if (prueba.modThree(nums1) == true){
         
-            jLabel1.setText("FALSO");
+        jLabel1.setText("GOOD");       
+        
+        }else {
+        
+         jLabel1.setText("BAD");
+        
         }
         
+         if (prueba.modThree(nums2) == true){
         
-        int [] nums2 = {1, 4, 1, 4};
+        jLabel2.setText("GOOD");       
         
-        boolean p2 = prueba.More14(nums2);
-        if (prueba.More14(nums1)== false){
-        jLabel2.setText("VERDADERO!!");} else {
+        }else {
         
-            jLabel2.setText("FALSO");
+         jLabel2.setText("BAD");
+        
         }
-        int [] nums3 = {1, 1};
+         
+          if (prueba.modThree(nums3) == true){
         
-        boolean p3 = prueba.More14(nums3);
-        if (prueba.More14(nums1)== true){
-        jLabel3.setText("VERDADERO!!");} else {
+        jLabel3.setText("GOOD");       
         
-            jLabel3.setText("FALSO");
+        }else {
+        
+         jLabel3.setText("BAD");
+        
         }
         
     }
@@ -82,34 +92,34 @@ public class More14_TEST extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
                     .addComponent(jLabel5)
                     .addComponent(jLabel6))
-                .addGap(72, 72, 72)
+                .addGap(100, 100, 100)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
                     .addComponent(jLabel2)
                     .addComponent(jLabel1))
-                .addContainerGap(208, Short.MAX_VALUE))
+                .addContainerGap(570, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addGap(54, 54, 54)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel4))
-                .addGap(55, 55, 55)
+                .addGap(64, 64, 64)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel5))
-                .addGap(69, 69, 69)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jLabel6))
-                .addContainerGap(107, Short.MAX_VALUE))
+                .addGap(69, 69, 69))
         );
 
         pack();
@@ -132,21 +142,20 @@ public class More14_TEST extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(More14_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModThree_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(More14_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModThree_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(More14_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModThree_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(More14_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModThree_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new More14_TEST().setVisible(true);
+                new ModThree_TEST().setVisible(true);
             }
         });
     }

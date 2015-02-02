@@ -4,47 +4,37 @@
  * and open the template in the editor.
  */
 package tests;
-
-import arrays2.More14;
+import arrays2.Has77;
 /**
  *
- * @author luisfeliz
+ * @author Admin
  */
-public class More14_TEST extends javax.swing.JFrame {
+public class Has77_TEST extends javax.swing.JFrame {
 
     /**
-     * Creates new form More14
+     * Creates new form Has77_TEST
      */
-    public More14_TEST() {
+    public Has77_TEST() {
         initComponents();
-        More14 prueba = new More14();
-        int [] nums1 = {1, 4, 1};
-        
-        boolean p1 = prueba.More14(nums1);
-        if (prueba.More14(nums1)== true){
-        jLabel1.setText("VERDADERO!!");} else {
-        
-            jLabel1.setText("FALSO");
+        Has77 prueba = new Has77();
+        int array[] = {1, 7, 7};
+        if(prueba.has77(array)==true){
+            jLabel1.setText("Impenesionante");
+        }else{
+            jLabel1.setText("MAL");
         }
-        
-        
-        int [] nums2 = {1, 4, 1, 4};
-        
-        boolean p2 = prueba.More14(nums2);
-        if (prueba.More14(nums1)== false){
-        jLabel2.setText("VERDADERO!!");} else {
-        
-            jLabel2.setText("FALSO");
+         int array1[] = {1, 7, 1, 1, 7};
+        if(prueba.has77(array1)==false){
+            jLabel2.setText("Impenesionante");
+        }else{
+            jLabel2.setText("MAL");
         }
-        int [] nums3 = {1, 1};
-        
-        boolean p3 = prueba.More14(nums3);
-        if (prueba.More14(nums1)== true){
-        jLabel3.setText("VERDADERO!!");} else {
-        
-            jLabel3.setText("FALSO");
+         int array2[] = {1, 7, 1, 7};
+        if(prueba.has77(array2)==true){
+            jLabel3.setText("Impenesionante");
+        }else{
+            jLabel3.setText("MAL");
         }
-        
     }
 
     /**
@@ -59,9 +49,6 @@ public class More14_TEST extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -71,45 +58,34 @@ public class More14_TEST extends javax.swing.JFrame {
 
         jLabel3.setText("jLabel3");
 
-        jLabel4.setText("Prueba 1");
-
-        jLabel5.setText("Prueba 2");
-
-        jLabel6.setText("Prueba 3");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6))
-                .addGap(72, 72, 72)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1))
-                .addContainerGap(208, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(101, 101, 101)
+                        .addComponent(jLabel2)))
+                .addContainerGap(258, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(82, 82, 82))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel4))
-                .addGap(55, 55, 55)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel5))
-                .addGap(69, 69, 69)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel6))
-                .addContainerGap(107, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(78, 78, 78)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(33, 33, 33))
         );
 
         pack();
@@ -132,21 +108,20 @@ public class More14_TEST extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(More14_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Has77_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(More14_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Has77_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(More14_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Has77_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(More14_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Has77_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new More14_TEST().setVisible(true);
+                new Has77_TEST().setVisible(true);
             }
         });
     }
@@ -155,8 +130,5 @@ public class More14_TEST extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }
