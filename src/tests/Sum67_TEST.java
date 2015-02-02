@@ -13,18 +13,18 @@ package tests;
 import arrays2.Sum67;
 
 public class Sum67_TEST extends javax.swing.JFrame {
-
+ Sum67 prueba = new Sum67();
     /**
      * Creates new form Sum67_TEST
      */
     public Sum67_TEST() {
         initComponents();
-        Sum67 prueba = new Sum67();
+        
         
         //array de prueba1
-        int [] nums1 ={1,2,3,4,5,6,1000,7,8,9};
-        int [] nums2 ={6,7,3,4,5,5,1000,7,8,9};
-        int [] nums3 ={7,7,7,6,5,1000,7,7,7};
+        
+       
+        
         
     }
 
@@ -111,15 +111,30 @@ public class Sum67_TEST extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-       if (prueba.Sum67(nums1) == true) {jLabel1.setText("Correzto");}else {jLabel1.setText("Mu mal");}
+       
+        int [] nums1 ={1,2,3,4,5,6,1000,7,8,9};
+        if (prueba.sum67(nums1) == true)
+        {jLabel1.setText("Correzto");}
+        else
+        {jLabel1.setText("Mu mal");}
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-  if (prueba.Sum67(nums2) == true) {jLabel1.setText("Correzto");}else {jLabel1.setText("Mu mal");}
+        
+        int [] nums2 ={6,7,3,4,5,5,1000,7,8,9};
+        if (prueba.sum67(nums2) == true) 
+        {jLabel1.setText("Correzto");}
+        else 
+        {jLabel1.setText("Mu mal");}
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-          if (prueba.Sum67(nums3) == true) {jLabel1.setText("Correzto");}else {jLabel1.setText("Mu mal");}
+       
+        int [] nums3 ={7,7,7,6,5,1000,7,7,7}; 
+        if (prueba.sum67(nums3) == true) 
+        {jLabel1.setText("Correzto");}
+        else
+        {jLabel1.setText("Mu mal");}
     }//GEN-LAST:event_jButton3MouseClicked
 
     /**
