@@ -10,5 +10,17 @@ package arrays2;
  * @author Admin
  */
 public class has12 {
-    
+  public boolean has12(int[] nums) {
+    boolean buscaUno= false;
+  boolean buscaDos = false;
+  
+  for (int i = 0; i < nums.length; i++) {
+    if (nums[i] == 1)
+      buscaUno = true;
+    if (nums[i] == 2 && buscaUno)
+      buscaDos = true;
+  }
+  return buscaDos;
+}
+
 }
