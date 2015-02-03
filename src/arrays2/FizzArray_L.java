@@ -9,6 +9,13 @@ package arrays2;
  *
  * @author luisfeliz
  */
-public class fizzArray {
+public class FizzArray_L {
     
+
+public int[] fizzArray(int n) {
+    int[] resultado = new int[n];
+    for (int i = 0; i < n; i++)
+        resultado[i] = i;
+    return resultado;
+}
 }
