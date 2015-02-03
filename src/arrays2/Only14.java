@@ -11,6 +11,7 @@ package arrays2;
  */
 public class Only14 {
     
+    if 
     
      public boolean only14(int[] nums) {
         int i;

@@ -9,7 +9,7 @@ import arrays2.BigDiff;
 
 /**
  *
- * @author xp
+ * @author Yoel Cano Martinez.
  */
 public class BigDiff_TEST extends javax.swing.JFrame {
 
@@ -20,16 +20,25 @@ public class BigDiff_TEST extends javax.swing.JFrame {
         initComponents();
         BigDiff prueba = new BigDiff();
         //Primer array de prueba para testear.
-        int [] nums1 = {10, 3, 5, 6};
+        int [] nums1 = {10, 1, 5, 6};
+        
         
         int p1 = prueba.bigDiff(nums1);
-        if(prueba.bigDiff(nums1)==3 ){
-            jLabel1.setText("PRYEBA OK");
+        if(prueba.bigDiff(nums1)== 9 ){
+            jLabel1.setText("PRUEBA OK");
         }
         else{
             jLabel1.setText("ERROR!");
         }
         
+        int [] nums2 = {8, 11, 3, 9 ,5 ,4 ,5 ,5};
+        int p2 = prueba.bigDiff(nums1);
+        if(prueba.bigDiff(nums2)== 8 ){
+            jLabel2.setText("PRUEBA OK");
+        }
+        else{
+            jLabel2.setText("ERROR!");
+        }
         
     }
 
@@ -43,26 +52,39 @@ public class BigDiff_TEST extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("jLabel1");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("jLabel1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(139, 139, 139)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(171, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(144, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(115, 115, 115))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(86, 86, 86)
+                .addGap(50, 50, 50)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(185, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addContainerGap(174, Short.MAX_VALUE))
         );
 
         pack();
@@ -106,5 +128,6 @@ public class BigDiff_TEST extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
