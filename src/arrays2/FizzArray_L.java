@@ -9,7 +9,7 @@ package arrays2;
  *
  * @author luisfeliz
  */
-public class fizzArray {
+public class FizzArray_L {
     
 
 public int[] fizzArray(int n) {
