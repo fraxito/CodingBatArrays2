@@ -10,6 +10,7 @@ import arrays2.HaveThree;
 //Creamos una clase para testear el havethree
  
 public class HaveThree__TEST extends javax.swing.JFrame {
+    
 HaveThree prueba = new HaveThree();
     /**
      * Creates new form HaveThree__TEST
@@ -41,7 +42,7 @@ HaveThree prueba = new HaveThree();
             jLabel3.setText("VERY BAD!!");
         }
         
-        //Tercer array para testear,nos debe dar true si tenemos 3 no 
+        //Cuarto array para testear,nos debe dar true si tenemos 3 no 
         //consecutivamente,es decir,uno si y uno no.
         int[] nums4 = {3, 1, 3, 1, 3};
         if (prueba.haveThree(nums4) == true) {
