@@ -8,7 +8,7 @@ package arrays2;
  *
  * @author xp
  */
-public class SameEnds {
+public class Same_Ends {
     
     public boolean sameEnds(int[] nums, int len) {
          int auxiliar = 0;
