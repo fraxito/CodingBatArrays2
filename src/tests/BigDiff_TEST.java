@@ -23,7 +23,7 @@ public class BigDiff_TEST extends javax.swing.JFrame {
         int [] nums1 = {10, 1, 5, 6};
         
         
-        int p1 = prueba.bigDiff(nums1);
+        //int p1 = prueba.bigDiff(nums1);
         if(prueba.bigDiff(nums1)== 9 ){
             jLabel1.setText("PRUEBA OK");
         }
@@ -32,7 +32,7 @@ public class BigDiff_TEST extends javax.swing.JFrame {
         }
         
         int [] nums2 = {8, 11, 3, 9 ,5 ,4 ,5 ,5};
-        int p2 = prueba.bigDiff(nums1);
+        //int p2 = prueba.bigDiff(nums1);
         if(prueba.bigDiff(nums2)== 8 ){
             jLabel2.setText("PRUEBA OK");
         }
