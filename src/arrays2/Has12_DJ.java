@@ -9,7 +9,7 @@ package arrays2;
  *
  * @author Admin
  */
-public class has12 {
+public class Has12_DJ {
   public boolean has12(int[] nums) {
     boolean buscaUno= false;
   boolean buscaDos = false;

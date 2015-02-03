@@ -4,42 +4,39 @@
  * and open the template in the editor.
  */
 package tests;
-
-import arrays2.BigDiff;
+import arrays2.Sum13_1;
 
 /**
  *
- * @author Yoel Cano Martinez.
+ * @author Cristina
  */
-public class BigDiff_TEST extends javax.swing.JFrame {
+public class Sum13_1_TEST extends javax.swing.JFrame {
 
     /**
-     * Creates new form BigDiff
+     * Creates new form Sum13_1_TEST
      */
-    public BigDiff_TEST() {
+    public Sum13_1_TEST() {
         initComponents();
-        BigDiff prueba = new BigDiff();
-        //Primer array de prueba para testear.
-        int [] nums1 = {10, 1, 5, 6};
-        
-        
-        //int p1 = prueba.bigDiff(nums1);
-        if(prueba.bigDiff(nums1)== 9 ){
-            jLabel1.setText("PRUEBA OK");
+        Sum13_1 prueba = new Sum13_1();
+    int array1[] = {1, 2, 2, 1};
+        if(prueba.Sum13_1(array1)== 6){
+            jLabel1.setText("Correcto");
         }
         else{
-            jLabel1.setText("ERROR!");
+            jLabel1.setText("MAL");
         }
-        
-        int [] nums2 = {8, 11, 3, 9 ,5 ,4 ,5 ,5};
-        //int p2 = prueba.bigDiff(nums1);
-        if(prueba.bigDiff(nums2)== 8 ){
-            jLabel2.setText("PRUEBA OK");
+         int array2[] = {1, 2, 2, 1};
+        if(prueba.Sum13_1(array2)== 6){
+            jLabel2.setText("Correcto");
+        }else{
+            jLabel2.setText("MAL");
         }
-        else{
-            jLabel2.setText("ERROR!");
+         int array3[] = {1, 1};
+        if(prueba.Sum13_1(array3)== 2){
+            jLabel3.setText("Correcto");
+        }else{
+            jLabel3.setText("MAL");
         }
-        
     }
 
     /**
@@ -53,38 +50,44 @@ public class BigDiff_TEST extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("jLabel1");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("jLabel1");
+        jLabel2.setText("jLabel2");
+
+        jLabel3.setText("jLabel3");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(144, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(115, 115, 115))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(175, 175, 175)
+                        .addComponent(jLabel2)))
+                .addContainerGap(191, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(87, 87, 87))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(29, 29, 29)
+                .addComponent(jLabel1)
+                .addGap(60, 60, 60)
                 .addComponent(jLabel2)
-                .addContainerGap(174, Short.MAX_VALUE))
+                .addGap(50, 50, 50)
+                .addComponent(jLabel3)
+                .addContainerGap(119, Short.MAX_VALUE))
         );
 
         pack();
@@ -107,21 +110,20 @@ public class BigDiff_TEST extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(BigDiff_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Sum13_1_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(BigDiff_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Sum13_1_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(BigDiff_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Sum13_1_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(BigDiff_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Sum13_1_TEST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new BigDiff_TEST().setVisible(true);
+                new Sum13_1_TEST().setVisible(true);
             }
         });
     }
@@ -129,5 +131,6 @@ public class BigDiff_TEST extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
