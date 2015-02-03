@@ -6,6 +6,8 @@ package arrays2;
  */
 public class Arrays2 {
 
+    
+   
     /**
      * @param args the command line arguments
      */
