@@ -110,14 +110,14 @@ public class SameFirstLast_TEST extends javax.swing.JFrame {
             jLabel2.setForeground(Color.RED);
         }
          int [] nums3 = {1,2,1};
-        if(prueba.sameFirstLast(nums2)== true)
+        if(prueba.sameFirstLast(nums3)== true)
         {
             jLabel3.setText("CORRECTO");
             jLabel3.setForeground(Color.GREEN);
         }
         else{
             jLabel3.setText("INCORRECTO");
-            jLabel2.setForeground(Color.RED);   
+            jLabel3.setForeground(Color.RED);   
         }
     }//GEN-LAST:event_jButton1MousePressed
 
