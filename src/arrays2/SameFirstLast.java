@@ -10,21 +10,16 @@ package arrays2;
  * @author xp
  */
 public class SameFirstLast {
-    int[] num = {1, 2, 3};
-    
     
     public boolean sameFirstLast(int[] nums) {
         boolean ok = false;
-        
         if(nums.length >=1)
         {
             if(nums[0] == nums[nums.length-1])
             {
                 ok = true;
-            }
-        
+            }      
         }
-        
         return ok;
     }
 
