@@ -24,7 +24,9 @@ int longitud = nums.length;
   
 //Cuando el ultimo numero no sea 4,resta a longitud uno hasta
 // que aparezca un 4.
-while (nums[longitud-1] != 4){ longitud --;}
+while (nums[longitud-1] != 4){ 
+    longitud --;
+}
 
 // El contador empieza desde 0 .
   int contador = 0;
@@ -32,7 +34,7 @@ while (nums[longitud-1] != 4){ longitud --;}
 // El resultado es  igual que los numero que vienen despues de la ultima 4.
   int  resultado [] = new int[nums.length-longitud];
  
- 
+ //Los siquientes codigos devuelve el resultado.
   for (int i = longitud; i<nums.length; i++){
      resultado[ contador] = nums[i];
      contador++; 
