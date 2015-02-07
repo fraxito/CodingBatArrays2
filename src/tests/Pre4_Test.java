@@ -20,28 +20,7 @@ public class Pre4_Test extends javax.swing.JFrame {
         initComponents();
         
     }
-    public int[] pre4(int[] nums) {
-//Añado un contador que empiece contar desde 0.
-int contador = 0;
-//La longitud de la cadena
-int longitud = nums.length;
-  
-// cuando el variable [i]  no sea 4 ,suma el contador uno
-for(int i = 0;nums[i] !=4;i++){ 
-    contador ++;
-}
-
-//Añado un array que es el  contador
-//el contador cuenta hasta que aparezca un 4 ,y el resultado es igual que 
-//los nunmeros que cuenta el contador
-
-  int  resultado [] = new int[contador];
-  for (int i = 0; i<resultado.length; i++){
-  resultado[ i] = nums[i];   
-  }
-  return resultado;
-  
-}
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
