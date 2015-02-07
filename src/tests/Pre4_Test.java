@@ -5,9 +5,11 @@
  */
 package tests;
 
+import arrays2.Pre4;
+
 /**
  *
- * @author TianWei
+ * @author Pepe Zhu
  */
 public class Pre4_Test extends javax.swing.JFrame {
 
@@ -16,7 +18,30 @@ public class Pre4_Test extends javax.swing.JFrame {
      */
     public Pre4_Test() {
         initComponents();
+        
     }
+    public int[] pre4(int[] nums) {
+//Añado un contador que empiece contar desde 0.
+int contador = 0;
+//La longitud de la cadena
+int longitud = nums.length;
+  
+// cuando el variable [i]  no sea 4 ,suma el contador uno
+for(int i = 0;nums[i] !=4;i++){ 
+    contador ++;
+}
+
+//Añado un array que es el  contador
+//el contador cuenta hasta que aparezca un 4 ,y el resultado es igual que 
+//los nunmeros que cuenta el contador
+
+  int  resultado [] = new int[contador];
+  for (int i = 0; i<resultado.length; i++){
+  resultado[ i] = nums[i];   
+  }
+  return resultado;
+  
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -27,21 +52,127 @@ public class Pre4_Test extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        COMPROBAR = new javax.swing.JButton();
+        COMPROBAR2 = new javax.swing.JButton();
+        COMPROBAR3 = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setText("jLabel1");
+
+        jLabel2.setText("jLabel2");
+
+        jLabel3.setText("jLabel3");
+
+        COMPROBAR.setText("COMPROBAR");
+        COMPROBAR.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                COMPROBARMousePressed(evt);
+            }
+        });
+
+        COMPROBAR2.setText("COMPROBAR2");
+        COMPROBAR2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                COMPROBAR2MousePressed(evt);
+            }
+        });
+        COMPROBAR2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                COMPROBAR2ActionPerformed(evt);
+            }
+        });
+
+        COMPROBAR3.setText("COMPROBAR3");
+        COMPROBAR3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                COMPROBAR3MousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1))
+                .addGap(80, 80, 80)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(COMPROBAR)
+                    .addComponent(COMPROBAR2)
+                    .addComponent(COMPROBAR3))
+                .addContainerGap(137, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(COMPROBAR))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(COMPROBAR2))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(COMPROBAR3))
+                .addContainerGap(160, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void COMPROBARMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_COMPROBARMousePressed
+   Pre4 prueba = new Pre4 ();
+      int [] listaNumeros = {1,2,4,1};
+      int [] resultado = {1,2};
+      if(prueba.pre4(listaNumeros) == resultado ){
+          jLabel1.setText("VERDADERO");
+      
+      }
+      else {
+            jLabel1.setText("FALSO");
+        }      
+    }//GEN-LAST:event_COMPROBARMousePressed
+
+    private void COMPROBAR2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_COMPROBAR2MousePressed
+         Pre4 prueba = new Pre4 ();
+      int [] listaNumeros = {3,1,4};
+      int [] resultado = {3,1};
+      if(prueba.pre4(listaNumeros) == resultado ){
+          jLabel2.setText("VERDADERO");
+      
+      }
+      else {
+            jLabel2.setText("FALSO");
+        }
+    }//GEN-LAST:event_COMPROBAR2MousePressed
+
+    private void COMPROBAR3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_COMPROBAR3MousePressed
+        Pre4 prueba = new Pre4 ();
+      int [] listaNumeros = {1,4,4};
+      int [] resultado = {1};
+      if(prueba.pre4(listaNumeros) == resultado ){
+          jLabel3.setText("VERDADERO");
+      
+      }
+      else {
+            jLabel3.setText("FALSO");
+        }
+    }//GEN-LAST:event_COMPROBAR3MousePressed
+
+    private void COMPROBAR2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_COMPROBAR2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_COMPROBAR2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +210,11 @@ public class Pre4_Test extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton COMPROBAR;
+    private javax.swing.JButton COMPROBAR2;
+    private javax.swing.JButton COMPROBAR3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
