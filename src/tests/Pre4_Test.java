@@ -34,9 +34,9 @@ public class Pre4_Test extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        COMPROBAR = new javax.swing.JButton();
-        COMPROBAR2 = new javax.swing.JButton();
-        COMPROBAR3 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,29 +46,34 @@ public class Pre4_Test extends javax.swing.JFrame {
 
         jLabel3.setText("jLabel3");
 
-        COMPROBAR.setText("COMPROBAR");
-        COMPROBAR.addMouseListener(new java.awt.event.MouseAdapter() {
+        jButton1.setText("COMPROBAR");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                COMPROBARMousePressed(evt);
+                jButton1MousePressed(evt);
             }
         });
-
-        COMPROBAR2.setText("COMPROBAR2");
-        COMPROBAR2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                COMPROBAR2MousePressed(evt);
-            }
-        });
-        COMPROBAR2.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                COMPROBAR2ActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
-        COMPROBAR3.setText("COMPROBAR3");
-        COMPROBAR3.addMouseListener(new java.awt.event.MouseAdapter() {
+        jButton2.setText("COMPROBAR2");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                COMPROBAR3MousePressed(evt);
+                jButton2MousePressed(evt);
+            }
+        });
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setText("COMPROBAR3");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton3MousePressed(evt);
             }
         });
 
@@ -84,9 +89,9 @@ public class Pre4_Test extends javax.swing.JFrame {
                     .addComponent(jLabel1))
                 .addGap(80, 80, 80)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(COMPROBAR)
-                    .addComponent(COMPROBAR2)
-                    .addComponent(COMPROBAR3))
+                    .addComponent(jButton1)
+                    .addComponent(jButton2)
+                    .addComponent(jButton3))
                 .addContainerGap(137, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -95,22 +100,22 @@ public class Pre4_Test extends javax.swing.JFrame {
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(COMPROBAR))
+                    .addComponent(jButton1))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(COMPROBAR2))
+                    .addComponent(jButton2))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(COMPROBAR3))
+                    .addComponent(jButton3))
                 .addContainerGap(160, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void COMPROBARMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_COMPROBARMousePressed
+    private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
    Pre4 prueba = new Pre4 ();
       int [] listaNumeros = {1,2,4,1};
       int [] resultado = {1,2};
@@ -121,9 +126,9 @@ public class Pre4_Test extends javax.swing.JFrame {
       else {
             jLabel1.setText("FALSO");
         }      
-    }//GEN-LAST:event_COMPROBARMousePressed
+    }//GEN-LAST:event_jButton1MousePressed
 
-    private void COMPROBAR2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_COMPROBAR2MousePressed
+    private void jButton2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MousePressed
          Pre4 prueba = new Pre4 ();
       int [] listaNumeros = {3,1,4};
       int [] resultado = {3,1};
@@ -134,9 +139,9 @@ public class Pre4_Test extends javax.swing.JFrame {
       else {
             jLabel2.setText("FALSO");
         }
-    }//GEN-LAST:event_COMPROBAR2MousePressed
+    }//GEN-LAST:event_jButton2MousePressed
 
-    private void COMPROBAR3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_COMPROBAR3MousePressed
+    private void jButton3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MousePressed
         Pre4 prueba = new Pre4 ();
       int [] listaNumeros = {1,4,4};
       int [] resultado = {1};
@@ -147,11 +152,15 @@ public class Pre4_Test extends javax.swing.JFrame {
       else {
             jLabel3.setText("FALSO");
         }
-    }//GEN-LAST:event_COMPROBAR3MousePressed
+    }//GEN-LAST:event_jButton3MousePressed
 
-    private void COMPROBAR2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_COMPROBAR2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_COMPROBAR2ActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -189,9 +198,9 @@ public class Pre4_Test extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton COMPROBAR;
-    private javax.swing.JButton COMPROBAR2;
-    private javax.swing.JButton COMPROBAR3;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
